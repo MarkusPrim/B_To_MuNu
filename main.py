@@ -49,6 +49,10 @@ class BToMuNuCalculations(object):
             * (1 - (lepton_mass / self.b_meson_mass)**2)**2 \
             * self.decay_constant**2 * self.v_ub**2 * self.b_meson_lifetime
 
+    def two_higgs_doublet_model_branching_ratio(self, lepton_mass, tan_beta, m_charged_higgs):
+        r_h = (1 - self.b_meson_mass**2 * tan_beta**2 / m_charged_higgs**2)**2
+        return self.standard_model_branching_ratio(lepton_mass) * r_h
+
 if __name__ == '__main__':
     calculator = BToMuNuCalculations()
     e = calculator.standard_model_branching_ratio(calculator.electron_mass)
