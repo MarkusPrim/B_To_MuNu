@@ -67,3 +67,8 @@ if __name__ == '__main__':
     print("Electron and Muon helicity suppression compared to Tau Channel:")
     print("BR(B->e nu) / BR(B->tau nu):\t{:.2e}".format(e/tau))
     print("BR(B->mu nu) / BR(B->tau nu):\t{:.2e}".format(mu/tau))
+    print()
+    N_BB = 772e6
+    print("Signal yield N_sig^e = {}".format(N_BB*e))
+    print("Signal yield N_sig^mu = {}".format(N_BB*mu))
+    print("Signal yield N_sig^tau = {}".format(N_BB*tau))
