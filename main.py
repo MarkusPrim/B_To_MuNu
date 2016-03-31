@@ -69,6 +69,7 @@ if __name__ == '__main__':
     print("BR(B->mu nu) / BR(B->tau nu):\t{:.2e}".format(mu/tau))
     print()
     N_BB = 772e6
-    print("Signal yield N_sig^e = {}".format(N_BB*e))
-    print("Signal yield N_sig^mu = {}".format(N_BB*mu))
-    print("Signal yield N_sig^tau = {}".format(N_BB*tau))
+    upsilon_to_b_charged_br = 0.514
+    print("Signal yield N_sig^e = {}".format(upsilon_to_b_charged_br * N_BB * e))
+    print("Signal yield N_sig^mu = {}".format(upsilon_to_b_charged_br * N_BB * mu))
+    print("Signal yield N_sig^tau = {}".format(upsilon_to_b_charged_br * N_BB * tau))
